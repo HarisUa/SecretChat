@@ -7,7 +7,7 @@
     "node": "6.11.2"
   },
   "dependencies": {
-    "express": "*"
+    "express": "*",
     "socket.io": "*"
   },
   "scripts": {
