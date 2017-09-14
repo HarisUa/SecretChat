@@ -4,10 +4,11 @@
   "description": "A simple chat client using socket.io",
   "author": "DeadlessDevs",
   "engines": {
-    "node": "6.11.1"
+    "node": "6.11.2"
   },
   "dependencies": {
-    "express": "4.13.4"
+    "express": "*",
+    "socket.io": "*"
   },
   "scripts": {
     "start": "node index.js"
