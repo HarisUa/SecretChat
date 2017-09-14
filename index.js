@@ -14,11 +14,32 @@ http.listen(3000, function(){
 });
 
 io.on('connection', function(socket) {
+	
 	console.log('connected new client');
+	
+	
+	var currentRoom = 'Global';
+	socket.join(currentRoom);
+	socket.join('test');
+	
+	io.emit('refreshClients', io.engine.clientsCount);
+	
+	socket.on('disconnect', function(data) { 
+		io.emit('refreshClients', io.engine.clientsCount);
+	});
 	
 	socket.on('message', function(data) { 
 		console.log(data);
-		socket.broadcast.emit('new message', data);
+		socket.broadcast.to(currentRoom).emit('new message', data);
 	});
 });
 
+
+function loadUser(req, res, next) {
+	if (req.session.user_id == client.id) {
+		return true;
+	} else {
+		socket.disconnect();
+		res.redirect('/');
+	}
+}
