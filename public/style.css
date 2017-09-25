@@ -17,8 +17,8 @@ body{
 }
 
 .cht {
-    height: calc(100vh - 182px);
-	background-color: darksalmon;
+    height: calc(100vh - 181px);
+	background-color: #fff0f5;
 }
 
 .decor-default {
