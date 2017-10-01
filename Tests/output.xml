@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171001 17:21:57.116" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/immunity/Git/Tests/1_login_password_test.robot" id="s1" name="1 Login Password Test">
+<test id="s1-t1" name="User must sign in to check out">
+<kw type="setup" name="Prepare Test Environment" library="_resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20171001 17:21:57.454" level="INFO">Opening browser 'Chrome' to base url 'http://secretchat.eu-4.evennode.com/'</msg>
+<status status="PASS" endtime="20171001 17:22:06.177" starttime="20171001 17:21:57.454"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171001 17:22:06.356" starttime="20171001 17:22:06.177"></status>
+</kw>
+<status status="PASS" endtime="20171001 17:22:06.356" starttime="20171001 17:21:57.453"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.answer-add</arg>
+</arguments>
+<status status="PASS" endtime="20171001 17:22:06.392" starttime="20171001 17:22:06.358"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Lobbys</arg>
+</arguments>
+<status status="PASS" endtime="20171001 17:22:06.526" starttime="20171001 17:22:06.393"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span</arg>
+</arguments>
+<msg timestamp="20171001 17:22:06.526" level="INFO">Clicking element 'css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span'.</msg>
+<status status="PASS" endtime="20171001 17:22:06.650" starttime="20171001 17:22:06.526"></status>
+</kw>
+<kw name="Click Image" library="Selenium2Library">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>https://bootdey.com/img/Content/avatar/avatar1.png</arg>
+</arguments>
+<msg timestamp="20171001 17:22:06.651" level="INFO">Clicking image 'https://bootdey.com/img/Content/avatar/avatar1.png'.</msg>
+<status status="PASS" endtime="20171001 17:22:06.765" starttime="20171001 17:22:06.650"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>css=.avatar</arg>
+</arguments>
+<msg timestamp="20171001 17:22:06.765" level="INFO">Verifying element 'css=.avatar' is visible.</msg>
+<status status="PASS" endtime="20171001 17:22:06.812" starttime="20171001 17:22:06.765"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>currently in chat:</arg>
+</arguments>
+<status status="PASS" endtime="20171001 17:22:06.833" starttime="20171001 17:22:06.812"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20171001 17:22:06.901" starttime="20171001 17:22:06.834"></status>
+</kw>
+<doc>Checking the chat and download some items.</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20171001 17:22:06.901" critical="yes" starttime="20171001 17:21:57.453"></status>
+</test>
+<doc>Checking the secret-chat: http://secretchat.eu-4.evennode.com/</doc>
+<status status="PASS" endtime="20171001 17:22:06.903" starttime="20171001 17:21:57.117"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="1 Login Password Test" pass="1">1 Login Password Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
