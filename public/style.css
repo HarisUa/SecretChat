@@ -1,0 +1,184 @@
+
+body{
+    margin-top:20px;
+    background:#eee;
+}
+
+.row.row-broken {
+    padding-bottom: 0;
+}
+
+.col-inside-lg {
+    padding: 20px;
+}
+
+.chat-users {
+    height: calc(100vh - 40px);
+}
+
+.cht {
+    height: calc(100vh - 182px);
+	background-color: darksalmon;
+}
+
+.decor-default {
+    background-color: #ffffff;
+}
+
+.chat-users h6 {
+    font-size: 20px;
+    margin: 0 0 20px;
+	padding: 10px;
+}
+
+.chat-users .user {
+    position: relative;
+    padding: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.chat-users .active {
+	background-color: antiquewhite;
+}
+
+.chat-users .user .avatar {
+    top: 0;
+    left: 0;
+}
+
+.chat .avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.chat .avatar img {
+    display: block;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.chat-users .user .name {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-users .user .mood {
+    font: 200 14px/20px "Raleway", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*****************CHAT BODY *******************/
+.chat-body h6 {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.answer.left {
+    padding: 0 0 0 20px;
+    text-align: left;
+    float: left;
+}
+.answer {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    clear: both;
+	margin-top: 10px;
+}
+
+.answer.left .text {
+	background: #7266ba;
+	color: #ffffff;
+    border-radius: 8px 8px 8px 0;
+}
+
+.answer .text {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+}
+
+/*RIGHT*/
+.answer.right {
+    padding: 0 20px 0 0;
+    text-align: right;
+    float: right;
+}
+
+.answer.right .text {
+    background: #ebebeb;
+    color: #333333;
+    border-radius: 8px 8px 0 8px;
+}
+
+/**************ADD FORM ***************/
+.answer-add {
+    padding: 20px;
+    background: #46be8a;
+}
+
+.answer-add input {
+    border: none;
+    background: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    color: #ffffff;
+	outline:none;
+}
+
+.answer-add input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.answer-add .answer-btn {
+    display: block;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    margin-top: -28px;
+}
+
+.answer-add .answer-btn-2 {
+    background: url("http://91.234.35.26/iwiki-admin/v1.0.0/admin/img/icon-41.png") 50% 50% no-repeat;
+    right: 20px;
+}
+
+.answer-add input::-webkit-input-placeholder {
+   color: #fff;
+}
+
+.answer-add input:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+.answer-add input::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+.answer-add input:-ms-input-placeholder {  
+   color: #fff;  
+}
+.answer-add input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.col-sm-8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666667%;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 73.666667%;
+    max-width: 73.666667%;
+}
