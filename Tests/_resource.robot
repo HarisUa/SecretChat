@@ -3,7 +3,7 @@ Library  Selenium2Library
 
 *** Variables ***
 ${BROWSER}          Chrome
-${HOST}             http://secretchat.eu-4.evennode.com/
+${HOST}             http://localhost:8080/
 
 *** Keywords ***
 Prepare Test Environment

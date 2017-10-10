@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20171001 17:21:57.116" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
-<suite source="/home/immunity/Git/Tests/1_login_password_test.robot" id="s1" name="1 Login Password Test">
+<robot generated="20171011 00:17:52.872" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="E:\1Майбутнє\Course_4\Team\SecretChat\Tests\1_login_password_test.robot" id="s1" name="1 Login Password Test">
 <test id="s1-t1" name="User must sign in to check out">
 <kw type="setup" name="Prepare Test Environment" library="_resource">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,72 +9,135 @@
 <arg>${HOST}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20171001 17:21:57.454" level="INFO">Opening browser 'Chrome' to base url 'http://secretchat.eu-4.evennode.com/'</msg>
-<status status="PASS" endtime="20171001 17:22:06.177" starttime="20171001 17:21:57.454"></status>
+<msg timestamp="20171011 00:17:53.510" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/'</msg>
+<status status="PASS" endtime="20171011 00:17:57.033" starttime="20171011 00:17:53.510"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20171001 17:22:06.356" starttime="20171001 17:22:06.177"></status>
+<status status="PASS" endtime="20171011 00:17:57.177" starttime="20171011 00:17:57.034"></status>
 </kw>
-<status status="PASS" endtime="20171001 17:22:06.356" starttime="20171001 17:21:57.453"></status>
+<status status="PASS" endtime="20171011 00:17:57.177" starttime="20171011 00:17:53.510"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>css=.answer-add</arg>
 </arguments>
-<status status="PASS" endtime="20171001 17:22:06.392" starttime="20171001 17:22:06.358"></status>
+<status status="PASS" endtime="20171011 00:17:57.205" starttime="20171011 00:17:57.178"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Lobbys</arg>
 </arguments>
-<status status="PASS" endtime="20171001 17:22:06.526" starttime="20171001 17:22:06.393"></status>
+<status status="PASS" endtime="20171011 00:17:57.229" starttime="20171011 00:17:57.207"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>message</arg>
+<arg>${MAIL}</arg>
+</arguments>
+<msg timestamp="20171011 00:17:57.230" level="INFO">Typing text 'ruslan.immunity@gmail.com' into text field 'message'</msg>
+<status status="PASS" endtime="20171011 00:17:57.405" starttime="20171011 00:17:57.230"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span</arg>
 </arguments>
-<msg timestamp="20171001 17:22:06.526" level="INFO">Clicking element 'css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span'.</msg>
-<status status="PASS" endtime="20171001 17:22:06.650" starttime="20171001 17:22:06.526"></status>
+<msg timestamp="20171011 00:17:57.406" level="INFO">Clicking element 'css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span'.</msg>
+<status status="PASS" endtime="20171011 00:17:57.480" starttime="20171011 00:17:57.405"></status>
 </kw>
 <kw name="Click Image" library="Selenium2Library">
 <doc>Clicks an image found by `locator`.</doc>
 <arguments>
 <arg>https://bootdey.com/img/Content/avatar/avatar1.png</arg>
 </arguments>
-<msg timestamp="20171001 17:22:06.651" level="INFO">Clicking image 'https://bootdey.com/img/Content/avatar/avatar1.png'.</msg>
-<status status="PASS" endtime="20171001 17:22:06.765" starttime="20171001 17:22:06.650"></status>
+<msg timestamp="20171011 00:17:57.483" level="INFO">Clicking image 'https://bootdey.com/img/Content/avatar/avatar1.png'.</msg>
+<status status="PASS" endtime="20171011 00:17:57.558" starttime="20171011 00:17:57.483"></status>
 </kw>
 <kw name="Element Should Be Visible" library="Selenium2Library">
 <doc>Verifies that the element identified by `locator` is visible.</doc>
 <arguments>
 <arg>css=.avatar</arg>
 </arguments>
-<msg timestamp="20171001 17:22:06.765" level="INFO">Verifying element 'css=.avatar' is visible.</msg>
-<status status="PASS" endtime="20171001 17:22:06.812" starttime="20171001 17:22:06.765"></status>
+<msg timestamp="20171011 00:17:57.559" level="INFO">Verifying element 'css=.avatar' is visible.</msg>
+<status status="PASS" endtime="20171011 00:17:57.594" starttime="20171011 00:17:57.558"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
-<arg>currently in chat:</arg>
+<arg>online:</arg>
 </arguments>
-<status status="PASS" endtime="20171001 17:22:06.833" starttime="20171001 17:22:06.812"></status>
+<status status="PASS" endtime="20171011 00:17:57.612" starttime="20171011 00:17:57.594"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>message</arg>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20171011 00:17:57.613" level="INFO">Typing text 'hello, world!' into text field 'message'</msg>
+<status status="PASS" endtime="20171011 00:17:57.693" starttime="20171011 00:17:57.613"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span</arg>
+</arguments>
+<msg timestamp="20171011 00:17:57.694" level="INFO">Clicking element 'css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.answer-add &gt; span'.</msg>
+<status status="PASS" endtime="20171011 00:17:57.730" starttime="20171011 00:17:57.693"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>css=.text</arg>
+</arguments>
+<status status="PASS" endtime="20171011 00:17:57.758" starttime="20171011 00:17:57.732"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>hello, world!</arg>
+</arguments>
+<status status="PASS" endtime="20171011 00:17:57.777" starttime="20171011 00:17:57.759"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>lastmessage</arg>
+</arguments>
+<status status="PASS" endtime="20171011 00:17:57.803" starttime="20171011 00:17:57.778"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.cht &gt; div &gt; div:nth-child(1)</arg>
+</arguments>
+<msg timestamp="20171011 00:17:57.804" level="INFO">Verifying element 'css=.content.container-fluid.bootstrap.snippets &gt; div &gt; div.col-sm-8.col-xs-12 &gt; div.cht &gt; div &gt; div:nth-child(1)' is visible.</msg>
+<status status="PASS" endtime="20171011 00:17:57.840" starttime="20171011 00:17:57.803"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3 sec</arg>
+</arguments>
+<msg timestamp="20171011 00:18:00.841" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20171011 00:18:00.841" starttime="20171011 00:17:57.841"></status>
 </kw>
 <kw type="teardown" name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20171001 17:22:06.901" starttime="20171001 17:22:06.834"></status>
+<status status="PASS" endtime="20171011 00:18:03.111" starttime="20171011 00:18:00.843"></status>
 </kw>
 <doc>Checking the chat and download some items.</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20171001 17:22:06.901" critical="yes" starttime="20171001 17:21:57.453"></status>
+<status status="PASS" endtime="20171011 00:18:03.113" critical="yes" starttime="20171011 00:17:53.509"></status>
 </test>
 <doc>Checking the secret-chat: http://secretchat.eu-4.evennode.com/</doc>
-<status status="PASS" endtime="20171001 17:22:06.903" starttime="20171001 17:21:57.117"></status>
+<status status="PASS" endtime="20171011 00:18:03.118" starttime="20171011 00:17:52.877"></status>
 </suite>
 <statistics>
 <total>
