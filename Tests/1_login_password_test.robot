@@ -14,11 +14,7 @@ User must sign in to check out
     Wait Until Page Contains Element  css=.answer-add
     Wait Until Page Contains  Lobbys
 <<<<<<< HEAD
-<<<<<<< HEAD
     Input Text  message  ${MAIL}
-=======
-    Input Text  text  ${MAIL}
->>>>>>> af0e609dbfe18d741f97eeb4c73d7b0179211ff0
 =======
     Input Text  text  ${MAIL}
 >>>>>>> af0e609dbfe18d741f97eeb4c73d7b0179211ff0

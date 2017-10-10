@@ -1,1 +1,3 @@
-node_modules
+Tests/*.html
+Tests/*.xml
+Tests/*.png
