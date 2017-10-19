@@ -1,7 +1,7 @@
 
 body{
-    margin-top:20px;
-    background:#eee;
+    margin-top:40px;
+    background:#f6f6f6;
 }
 
 .row.row-broken {
@@ -17,7 +17,7 @@ body{
 }
 
 .cht {
-    height: calc(100vh - 181px);
+    height: calc(100vh - 182px);
 	background-color: #fff0f5;
 }
 
@@ -35,7 +35,7 @@ body{
     position: relative;
     padding: 30px;
     display: block;
-    cursor: pointer;
+    cursor: w-resize;
 }
 
 .chat-users .active {
@@ -54,7 +54,7 @@ body{
 
 .chat .avatar img {
     display: block;
-    border-radius: 20px;
+    border-radius: 15px;
     height: 100%;
 }
 
@@ -76,6 +76,7 @@ body{
 
 /*****************CHAT BODY *******************/
 .chat-body h6 {
+    font-family: 'Times New Roman';
     font-size: 20px;
     margin: 0 0 20px;
 }
