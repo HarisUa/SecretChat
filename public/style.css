@@ -48,8 +48,8 @@ body{
 }
 
 .chat .avatar {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .chat .avatar img {
@@ -58,8 +58,42 @@ body{
     border-bottom-left-radius: 15px;
     height: 100%;
 }
-
-.chat-users .user .name {
+.name span[class^="word"] {
+    display: inline-block;
+    margin: 0 15px;
+}
+.name span[class^="char"] {
+    width: 90px;
+    height: 100px;
+    display: inline-block;
+    background: #e4d095;
+    color: #2a1f1b;
+    border-radius: 4px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 100px;
+    margin: 10px 3px;
+    text-align: center;
+    cursor: default;
+    font-family: "Spinnaker", Arial, sans-serif;
+    text-shadow:
+        1px 1px 1px rgba(255, 255, 255, 0.9),
+        0 -1px 1px rgba(255,255,255,0.2);
+    text-transform: uppercase;
+    box-shadow:
+        1px 7px 15px rgba(0,0,0,0.8),
+        inset 3px 0 2px rgba(255,255,255,0.4),
+        inset 0 3px 0px rgba(255,255,255,0.5),
+        inset -2px -3px 0px rgba(143,128,82,0.6);
+}
+.name span[class^="char"]:nth-child(odd) {
+    transform: rotate(2deg);
+}
+ 
+.name span[class^="char"]:nth-child(3n) {
+    transform: rotate(-3deg);
+}
+.chat-users .user .name{
     font-size: 15px;
     font-weight: bold;
     line-height: 20px;
