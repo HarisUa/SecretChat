@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Socket.IO Chat Example</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jqueryrotate.2.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -19,7 +21,7 @@
                             <div class="user active">
 								<div class="row">
 									<div class="avatar">
-										<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="User name">
+										<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="User name" id = "rotateImg">
 									</div>
 									<div style="padding-left:20px">
 										<div class="name">Global</div>
@@ -53,5 +55,18 @@
             	$(".cht").niceScroll();
             });
         </script>
+        <script type="text/javascript">
+        jQuery("#rotateImg").rotate({ 
+            bind: 
+        { 
+        mouseover : function() { 
+            jQuery(this).rotate({animateTo:180})
+        },
+        mouseout : function() { 
+            jQuery(this).rotate({animateTo:0})
+        }
+     } 
+});
+</script>
         </body>
 </html>
