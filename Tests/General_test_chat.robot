@@ -13,13 +13,12 @@ User must sign in to check out
     [Tags]  Smoke
     Wait Until Page Contains Element  css=.answer-add
     Wait Until Page Contains  Lobbys
-    Input Text  message  ${MAIL}
-    Input Text  text  ${MAIL}
+    Input Text  css=.m  ${MAIL}
     Click Element   css=.content.container-fluid.bootstrap.snippets > div > div.col-sm-8.col-xs-12 > div.answer-add > span
     Click Image     https://bootdey.com/img/Content/avatar/avatar1.png
     Element Should Be Visible  css=.avatar
     Wait Until Page Contains  online:
-    Input Text  message  ${message}
+    Input Text  css=.m  ${message}
     Click Element   css=.content.container-fluid.bootstrap.snippets > div > div.col-sm-8.col-xs-12 > div.answer-add > span
     Wait Until Page Contains Element    css=.text
     Wait Until Page Contains    hello, world!
